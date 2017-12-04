@@ -65,9 +65,20 @@ namespace Sq1_Assignment_2
             return Math.Abs( 0.5 * GetSideA() * GetSideB());
         }
 
+        public double GetAngleA()
+        {
+            return angleA;
+        }
+
+        public double GetAngleB()
+        {
+            return angleB;
+        }
+
         public double GetUnknownAngle()
         {
-            return 0.0;
+            double result = 180 - GetAngleA() - GetAngleB();
+            return result;
         }
 
     }
