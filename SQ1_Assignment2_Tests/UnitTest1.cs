@@ -78,11 +78,11 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void TestAngle()
         {
-            Triangle test = new Triangle(4, -5, 45, 45);
+            Triangle test = new Triangle(4, -5, 40, 40);
 
             double result = test.GetUnknownAngle();
 
-            Assert.AreEqual(result, 90.0);
+            Assert.AreEqual(result, 100.0);
 
         }
     }

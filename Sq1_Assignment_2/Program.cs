@@ -77,7 +77,7 @@ namespace Sq1_Assignment_2
 
         public double GetUnknownAngle()
         {
-            double result = 180 - GetAngleA() - GetAngleB();
+            double result = 180.0 - GetAngleA() - GetAngleB();
             return result;
         }
 
