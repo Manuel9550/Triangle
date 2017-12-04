@@ -38,9 +38,22 @@ namespace Sq1_Assignment_2
             return sideA;
         }
 
+        public int GetSideB()
+        {
+            return sideB;
+        }
+
         public double GetHypotenuse()
         {
-            return 0.0;
+            double result = 0.0;
+            int sideA = GetSideA();
+            int sideB = GetSideB();
+
+            // now getting the result of the hypotenuse from the two sides.
+            Math.Sqrt(Math.Pow(sideA, 2) + Math.Pow(sideB, 2));
+
+
+            return result;
         }
 
     }
