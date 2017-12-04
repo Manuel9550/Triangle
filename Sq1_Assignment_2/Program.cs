@@ -35,7 +35,7 @@ namespace Sq1_Assignment_2
 
         public int GetSideA()
         {
-            return 0;
+            return sideA;
         }
 
 
