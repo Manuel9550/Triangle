@@ -8,11 +8,11 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void GetSideTest()
         {
-            Triangle test = new Triangle(10, 5);
+            Triangle test = new Triangle(5, 10);
 
             int result = test.GetSideA();
 
-            Assert.AreEqual(result, 10);
+            Assert.AreEqual(result, 5);
 
         }
     }
