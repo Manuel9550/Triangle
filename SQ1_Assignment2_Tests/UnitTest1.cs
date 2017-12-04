@@ -60,7 +60,7 @@ namespace SQ1_Assignment2_Tests
 
             double result = test.GetArea();
 
-            Assert.AreEqual(result,10);
+            Assert.AreEqual(result, 5.0);
 
         }
     }
