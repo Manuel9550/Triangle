@@ -63,6 +63,17 @@ namespace SQ1_Assignment2_Tests
             Assert.AreEqual(result, 5.0);
 
         }
+
+        [TestMethod]
+        public void TestAreaException()
+        {
+            Triangle test = new Triangle(2, -5);
+
+            double result = test.GetArea();
+
+            Assert.AreEqual(result, 5.0);
+
+        }
     }
 
 
