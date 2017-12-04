@@ -55,6 +55,11 @@ namespace Sq1_Assignment_2
 
             return result;
         }
+        
+        public double GetArea()
+        {
+            return 5.0;
+        }
 
     }
 
