@@ -38,8 +38,14 @@ namespace Sq1_Assignment_2
             return sideA;
         }
 
+        public double GetHypotenuse()
+        {
+            return 0.0;
+        }
 
     }
+
+    
 
 
 
