@@ -58,7 +58,7 @@ namespace Sq1_Assignment_2
         
         public double GetArea()
         {
-            return 5.0;
+            return 0.5 * GetSideA() * GetSideB();
         }
 
     }
