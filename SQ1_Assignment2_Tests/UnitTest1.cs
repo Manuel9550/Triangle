@@ -42,7 +42,7 @@ namespace SQ1_Assignment2_Tests
             Triangle test = new Triangle(0, 0);
 
             double result = test.GetHypotenuse();
-            double expected = 10;
+            double expected = 0;
 
             // get the acceptble difference value
             double AcceptableRange = 0.01;
