@@ -24,11 +24,15 @@ namespace Sq1_Assignment_2
     {
         private int sideA;
         private int sideB;
+        private double angleA;
+        private double angleB;
 
-        public Triangle(int a, int b)
+        public Triangle(int a, int b, double aa, double ab)
         {
             sideA = a;
             sideB = b;
+            angleA = aa;
+            angleB = ab;
 
 
         }
@@ -59,6 +63,11 @@ namespace Sq1_Assignment_2
         public double GetArea()
         {
             return Math.Abs( 0.5 * GetSideA() * GetSideB());
+        }
+
+        public double GetUnknownAngle()
+        {
+            return 0.0;
         }
 
     }

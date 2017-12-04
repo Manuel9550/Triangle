@@ -11,7 +11,7 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void GetSideTest()
         {
-            Triangle test = new Triangle(10, 5);
+            Triangle test = new Triangle(10, 5, 0 ,0);
 
             int result = test.GetSideA();
 
@@ -22,7 +22,7 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void TestHypotenuse()
         {
-            Triangle test = new Triangle(10, 5);
+            Triangle test = new Triangle(10, 5, 0 ,0);
 
             double result = test.GetHypotenuse();
             double expected = 11.18;
@@ -39,7 +39,7 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void TestHypotenuseException()
         {
-            Triangle test = new Triangle(0, 0);
+            Triangle test = new Triangle(0, 0, 0 ,0);
 
             double result = test.GetHypotenuse();
             double expected = 0.0;
@@ -56,7 +56,7 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void TestAreaNormal()
         {
-            Triangle test = new Triangle(2, 5);
+            Triangle test = new Triangle(2, 5, 0 ,0);
 
             double result = test.GetArea();
 
@@ -67,11 +67,22 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void TestAreaException()
         {
-            Triangle test = new Triangle(4, -5);
+            Triangle test = new Triangle(4, -5, 0 ,0);
 
             double result = test.GetArea();
 
             Assert.AreEqual(result, 10.0);
+
+        }
+
+        [TestMethod]
+        public void TestAngle()
+        {
+            Triangle test = new Triangle(4, -5, 45, 45);
+
+            double result = test.GetUnknownAngle();
+
+            Assert.AreEqual(result, 90.0);
 
         }
     }
