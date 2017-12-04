@@ -35,6 +35,23 @@ namespace SQ1_Assignment2_Tests
             Assert.AreEqual(resultBool, true);
 
         }
+
+        [TestMethod]
+        public void TestHypotenuseException()
+        {
+            Triangle test = new Triangle(0, 0);
+
+            double result = test.GetHypotenuse();
+            double expected = 10;
+
+            // get the acceptble difference value
+            double AcceptableRange = 0.01;
+
+            bool resultBool = Math.Abs(result - expected) <= AcceptableRange;
+
+            Assert.AreEqual(resultBool, true);
+
+        }
     }
 
 
