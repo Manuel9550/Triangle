@@ -58,7 +58,7 @@ namespace Sq1_Assignment_2
         
         public double GetArea()
         {
-            return 0.5 * GetSideA() * GetSideB();
+            return Math.Abs( 0.5 * GetSideA() * GetSideB());
         }
 
     }
