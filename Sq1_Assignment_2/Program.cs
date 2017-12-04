@@ -50,7 +50,7 @@ namespace Sq1_Assignment_2
             int sideB = GetSideB();
 
             // now getting the result of the hypotenuse from the two sides.
-            Math.Sqrt(Math.Pow(sideA, 2) + Math.Pow(sideB, 2));
+            result = Math.Sqrt(Math.Pow(sideA, 2) + Math.Pow(sideB, 2));
 
 
             return result;

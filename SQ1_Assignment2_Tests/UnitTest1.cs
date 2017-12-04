@@ -25,10 +25,10 @@ namespace SQ1_Assignment2_Tests
             Triangle test = new Triangle(10, 5);
 
             double result = test.GetHypotenuse();
-            double expected = 3225.0;
+            double expected = 11.18;
 
             // get the acceptble difference value
-            double AcceptableRange = 0.001;
+            double AcceptableRange = 0.01;
 
             bool resultBool = Math.Abs(result - expected) <= AcceptableRange;
 
