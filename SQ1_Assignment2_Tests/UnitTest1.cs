@@ -85,6 +85,17 @@ namespace SQ1_Assignment2_Tests
             Assert.AreEqual(result, 100.0);
 
         }
+
+        [TestMethod]
+        public void TestAngleException()
+        {
+            Triangle test = new Triangle(4, -5, 270, 130);
+
+            double result = test.GetUnknownAngle();
+
+            Assert.AreEqual(result, -1);
+
+        }
     }
 
 
