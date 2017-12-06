@@ -89,7 +89,7 @@ namespace SQ1_Assignment2_Tests
         [TestMethod]
         public void TestAngleException()
         {
-            Triangle test = new Triangle(4, -5, 270, 130);
+            Triangle test = new Triangle(4, -5, 150, 170);
 
             double result = test.GetUnknownAngle();
 
